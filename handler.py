@@ -20,3 +20,10 @@ class RoboflowHandler:
         new_version = self.project.generate_version(settings=settings)
         return self.project.version(new_version)
 
+    def train_model(self, version):
+        model = version.train(
+            speed="fast",
+            checkpoint=None,
+            plot_in_notebook=False 
+        )
+        return model
