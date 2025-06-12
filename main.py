@@ -2,7 +2,11 @@ from handler import RoboflowHandler
 
 handler = RoboflowHandler("defect-detection-b2xj1")
 
+# Upload the dataset only if the pictures don't exist. Duplicates won't get added to the roboflow dataset anyways. 
 # handler.upload_dataset("./dataset")
+
+# If a version already exists, check instructions below to see what version id exists. Use the method below to get the version,
+# instead of creatign a new version every time.
 
 # settings = {
 #     "preprocessing": {
