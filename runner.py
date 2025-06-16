@@ -9,7 +9,7 @@ result = client.run_workflow(
     workspace_name="kf-hlml3",
     workflow_id="custom-workflow",
     images={
-        "image": "dataset/test/atest5.png"
+        "image2": "dataset/test/atest5.png"
     },
     use_cache=True
 )
