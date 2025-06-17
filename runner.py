@@ -2,7 +2,7 @@ from inference_sdk import InferenceHTTPClient
 
 client = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
-    api_key="Pa0QekzB64JZiaxARFG8"
+    api_key="PLACEHOLDER"
 )
 
 result = client.run_workflow(
